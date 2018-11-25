@@ -1,0 +1,48 @@
+.main_top{ 
+    position: fixed;
+    z-index: 10;
+    right: 0;
+    left: 0;
+    top:0;
+    height: 50px;
+    padding:0px 12px 0; text-align:left; color: #151515; line-height:50px;
+    background-color:#fff;
+   }
+.banner{ width: 100%; height:220rpx; overflow: hidden; background: #dc3a3a; margin-top: 100rpx}
+.banner .head{float: left;width: 100rpx; height: 100rpx; margin: 40rpx;}
+.banner .head image{ width: 100%;height: 100%;}
+.banner .user-info{float: left;color:#fff; margin-top: 24rpx;}
+.banner .user-info .h3{line-height: 50rpx;float: left}
+.banner .user-info .box-mar-top{margin-left: -44rpx;}
+.banner .user-info .box-mar-buttom{margin-left: -44rpx;font-weight: bolder;}
+.banner .user-info .box-mar-top .data-info{float: left;width:auto;padding: 0 50rpx; border-right: 2rpx solid rgba(255,252,252,0.7); margin-top: 20rpx;text-align: center;color: rgba(255,252,252,0.8)}
+.banner .user-info .box-mar-buttom .data-info{float: left;width:auto;padding: 0 50rpx; text-align: center;}
+.banner .user-info .data-info:last-child{ border-right: 0rpx solid #fff;}
+.banner .user-info .box-mar-buttom .data-info:last-child{ padding-left: 120rpx;}
+
+.youhq_box{margin-top: 16rpx; padding: 36rpx; width:750rpx; height: 210rpx; background:url(http://47.107.139.33/images/home-youhqBg.png) no-repeat; background-size: 750rpx; position: relative;font-size: 32rpx;line-height: 44rpx; color: #000;}
+.youhq_box .t-con{height: 190rpx}
+.youhq_box .bot-con{height: 66rpx; line-height: 48rpx; padding-left: 12rpx;}
+.youhq_left{width: 176rpx;height: 150rpx;margin-left: 10rpx; float: left;background:#e9435e;border-radius: 10rpx; text-align: center; color:rgba(255,255,255,0.85);padding-top: 12rpx}
+.youhq_middle{float: left;margin-left: 20rpx;}
+.youhq_middle .h3{margin-top: 24rpx; margin-bottom:10rpx;font-size: 40rpx; font-weight: bolder;}
+.youhq_middle .p{font-size: 26rpx;}
+.youhq_right{right: 140rpx; position: absolute;border-radius:80rpx; height: 40rpx; width: 160rpx;background: #e9435e;color: #fff;  text-align: center; line-height: 40rpx;display: initial;font-size:32rpx;}
+.youhq-more{height: 56rpx; line-height: 56rpx; text-align: center;color: #484747;font-size: 28rpx;}
+
+.home-activity-box{ background: #fff; margin-top:4rpx; overflow: hidden;margin-bottom:2rpx; height:490rpx}
+.photo-block image{width: 750rpx;height: 360rpx;}
+.text-block{width:750rpx; padding: 9rpx 30rpx;}
+.text-block .title-info{width:700rpx; float: left; font-size:32rpx;}
+.text-block .title-info .h3{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width: 700rpx;}
+.text-block .title-info .p{font-size: 14px;margin-top: 3px;margin-bottom: 5px;color: #8f8f94;}
+.text-block .btn{right:60rpx;float: right;width: 188rpx; display: block;    border-radius:12rpx;height: 70rpx; background: #e9435e;color: #fff; text-align: center;line-height: 70rpx; margin-top: 12rpx;font-size: 32rpx;}
+
+.home-down-box{height: 300rpx;width: 750rpx;background: #fff;border-top: 2rpx solid #f9fafb; margin-bottom: 130rpx;overflow: hidden;font-size:32rpx;}
+.home-down-box .left-text{width: 300rpx;float: left;padding:36rpx 24rpx 16rpx 40rpx;}
+.home-down-box .left-text .p1{margin-top: 0rpx;font-size: 14px;margin-bottom: 5px;color: #8f8f94;}
+.home-down-box .left-text .black{font-size: 14px;margin-top: 3px;margin-bottom: 5px;}
+.home-down-box .left-text .red{font-size: 14px;margin-top: 3px;margin-bottom: 5px;}
+.home-down-box .left-text image{width:36rpx; height:36rpx; margin-right: 12rpx;display: block;float: left;margin-top: 4rpx;}
+.home-down-box .left-text .btn{width: 188rpx; display: block;    border-radius:12rpx;height: 60rpx; background: #e9435e;color: #fff; text-align: center;line-height: 60rpx; margin-top: 12rpx;font-size: 28rpx;padding: 0rpx;}
+.home-down-box .right-map{width: 380rpx;float: right}

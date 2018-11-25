@@ -1,5 +1,5 @@
 {
-	"description": "FaShop商城系统",
+	"description": "恒源祥商城",
 	"packOptions": {
 		"ignore": []
 	},
@@ -13,7 +13,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.2.3",
 	"appid": "",
-	"projectname": "FaShop",
+	"projectname": "HYX",
 	"isGameTourist": false,
 	"condition": {
 		"search": {

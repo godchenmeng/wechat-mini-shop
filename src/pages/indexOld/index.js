@@ -1,6 +1,8 @@
 import regeneratorRuntime from '../../libs/regenerator-runtime/runtime-module'
 import PageModel from "../../models/page";
+
 const pageModel = new PageModel()
+
 Page({
     data: {
         pageData: null,
@@ -11,6 +13,7 @@ Page({
             withShareTicket: true
         })
         this.initPage()
+
     },
     onBannerClick(e) {
         const dataSource = e.detail.dataSource
@@ -49,7 +52,6 @@ Page({
         this.handelLink(info.link)
     },
     onSearchClick() {
-        console.log('onSearchClick')
         wx.navigateTo({
             url: `/pages/goods/search/index`
         })
@@ -64,12 +66,11 @@ Page({
             title: page.name
         })
     },
-    async onPullDownRefresh() {
+    onPullDownRefresh() {
         this.initPage()
         wx.stopPullDownRefresh()
     },
     handelLink(link) {
-        console.log(getCurrentPages())
         switch (link.action) {
             case 'portal':
                 wx.switchTab({
@@ -82,16 +83,9 @@ Page({
                 })
                 break
             case 'page':
-                if(getCurrentPages().length > 1){
-                    // 小程序对层级有限制
-                    wx.redirectTo({
-                        url: `/pages/page/index?id=${link.param.id}`
-                    })
-                }else{
-                    wx.navigateTo({
-                        url: `/pages/page/index?id=${link.param.id}`
-                    })
-                }
+                wx.navigateTo({
+                    url: `/pages/page/index?id=${link.param.id}`
+                })
                 break
         }
     },

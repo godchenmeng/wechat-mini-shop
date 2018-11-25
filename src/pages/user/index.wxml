@@ -115,10 +115,4 @@
     <block wx:else>
         <unlogin-ucenter bind:login-success="onLoginSuccess" bind:login-fail="onLoginFail"></unlogin-ucenter>
     </block>
-    <view class="fashop-copyright">
-        <view class="body">
-            <image src="/themes/fashop/copyright.png" mode="aspectFit" ></image>
-            <text>提供技术支持</text>
-        </view>
-    </view>
 </view>

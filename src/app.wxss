@@ -63,3 +63,19 @@ page{
     color: #666;
 }
 
+.red{ color:#d80100}
+.gray{text-decoration:line-through; color:#CCC}
+.gray1{color:#CCC}
+.gray2{color:#4d4d4d}
+.orange{ color:#f4973a}
+.white{color: #fff!important}
+.font18{ font-size:1.3em}
+.font35{ font-size:2.5em}
+.font30{font-size: 1.6em}
+.font12{ font-size:12px!important}
+.mart12{ margin-top: 12px!important;}
+.mart62{margin-top: 62px!important}
+.mart50{margin-top:50px}
+.black{color: #0d0d0d}
+.block{margin-top: 12px; padding: 12px; background: #fff}
+.showNone{box-shadow: 0 0px 0px #e2a2a2;}

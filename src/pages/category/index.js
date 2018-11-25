@@ -69,15 +69,23 @@ Page({
                 }
 
                 this.setData({
-                    'style1.categoryList': categoryList,
-                    'style1.mainNavScrollPoints': mainNavScrollPoints
+                    style1: {
+                        ...this.data.style1, ...{
+                            categoryList: categoryList,
+                            mainNavScrollPoints: mainNavScrollPoints,
+                        }
+                    }
                 })
                 break
             case 2:
                 const categoryListResult2 = await goodsCategoryModel.list()
                 const categoryList2 = categoryListResult2.list
                 this.setData({
-                    'style2.categoryList': categoryList2
+                    style2: {
+                        ...this.data.style2, ...{
+                            categoryList: categoryList2,
+                        }
+                    }
                 })
                 break
             case 3:
@@ -85,8 +93,12 @@ Page({
                 const categoryListResult3 = await goodsCategoryModel.list()
                 const categoryList3 = categoryListResult3.list
                 this.setData({
-                    'style3.smallImageWidth': (systemInfo.windowWidth - 18) / 2,
-                    'style3.categoryList': categoryList3
+                    style3: {
+                        ...this.data.style3, ...{
+                            smallImageWidth: (systemInfo.windowWidth - 18) / 2,
+                            categoryList: categoryList3,
+                        }
+                    }
                 })
                 this.style3GetGoodsList()
                 break
@@ -95,7 +107,11 @@ Page({
     },
     mainNavTap: function (e) {
         this.setData({
-            'style1.mainNavClickIndex': e.currentTarget.dataset.index
+            style1: {
+                ...this.data.style1, ...{
+                    mainNavClickIndex: e.currentTarget.dataset.index
+                }
+            }
         })
     },
     subNavScroll: function (e) {
@@ -104,7 +120,11 @@ Page({
             // console.log(`当前位置是：${e.detail.scrollTop}，${mainNavScrollPoints[i].start}---${mainNavScrollPoints[i].end}`)
             if (mainNavScrollPoints[i].start <= e.detail.scrollTop && e.detail.scrollTop < mainNavScrollPoints[i].end) {
                 this.setData({
-                    'style1.mainNavScrollIndex': mainNavScrollPoints[i].index
+                    style1: {
+                        ...this.data.style1, ...{
+                            mainNavScrollIndex: mainNavScrollPoints[i].index
+                        }
+                    }
                 })
                 break;
             }
@@ -149,9 +169,13 @@ Page({
     },
     style3CategoryClick(e) {
         this.setData({
-            'style3.page': 1,
-            'style3.categoryId': e.currentTarget.dataset.categoryId,
-            'style3.categoryClickIndex': parseInt(e.currentTarget.dataset.index),
+            style3: {
+                ...this.data.style3, ...{
+                    page: 1,
+                    categoryId: e.currentTarget.dataset.categoryId,
+                    categoryClickIndex: parseInt(e.currentTarget.dataset.index)
+                }
+            }
         })
         this.style3GetGoodsList()
     },

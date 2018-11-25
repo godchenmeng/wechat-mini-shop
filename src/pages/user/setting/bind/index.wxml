@@ -18,8 +18,8 @@
         </fa-cell-group>
     </fa-panel>
     <view class="footer">
-        <text>账号关联之后，用户可使用微信或手机号登录FaShop。</text>
-        <text>在各个渠道进行购物时，均可同步FaShop账号，享受FaShop特权，同步订单信息。</text>
-        <text>FaShop承诺保障您的账号隐私安全。</text>
+        <text>账号关联之后，用户可使用微信或手机号登录恒源祥商城。</text>
+        <text>在各个渠道进行购物时，均可同步恒源祥商城账号，享受恒源祥商城特权，同步订单信息。</text>
+        <text>恒源祥商城承诺保障您的账号隐私安全。</text>
     </view>
 </view>

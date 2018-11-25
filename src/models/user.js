@@ -9,7 +9,9 @@ export default class User extends Model {
     }
     async login(params = { login_type: 'password', phone: null, password: null }) {
         try {
+            debugger
             const { result } = await request(api.user.login, { data: params })
+            debugger
             return new UserTokenInfoInterface(result)
         } catch (e) {
             this.setException(e)

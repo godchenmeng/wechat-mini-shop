@@ -1,0 +1,61 @@
+<view style='background-color:#efeff4;display: block;overflow: hidden'>
+  <view id="tabbar2" class="mui-control-content">
+    <view  class="mui-bar mui-bar-nav">
+    <!--<a class="mui-pull-left topIcon" href="index.html"><img src="images/top_back.png"></a>-->
+      <text class="mui-title">优惠券</text>
+    </view>
+    <view class="tabbar2_yhqBox">
+      <view class="youhq_box">
+        <view class="t-con">
+          <view class="youhq_left">
+            <text class="font35 white" style='line-height:80rpx'>8</text>
+            <text>折\n折扣券</text>
+          </view>
+          <view class="youhq_middle">
+            <view>您有一张折扣券即将到期！</view>
+            <view class='h3'>\n全店通用</view>
+            <view class='p'>\n有效期至:2018-11-12</view>
+          </view>
+        </view>
+        <view class="bot-con">
+          <text class="red">还有5天到期</text>
+          <button class="youhq_right">去使用</button>
+        </view>
+      </view>
+      <view class="youhq_box">
+        <view class="t-con">
+          <view class="Bgbule-yhq youhq_left">
+            <text class="font30 white" style='line-height:80rpx'>800</text>
+            <text>元\n优惠券</text>
+          </view>
+          <view class="youhq_middle">
+            <view>您有一张优惠券即将到期！</view>
+            <view class='h3'>\n限金阳店用</view>
+            <view class='p'>\n有效期至:2018-11-12</view>
+          </view>
+        </view>
+        <view class="bot-con">
+          <text class="red">还有5天到期</text>
+          <button class="youhq_right">去使用</button>
+        </view>
+      </view>
+      <view class="youhq_box">
+        <view class="t-con">
+          <view class="Bggreen-yhq youhq_left">
+            <text class="font30 white" style='line-height:80rpx'>500</text>
+            <text>元\n满减券</text>
+          </view>
+          <view class="youhq_middle">
+            <view>您有一张满减券即将到期！</view>
+            <view class='h3'>\n全店通用</view>
+            <view class='p'>\n有效期至:2018-11-12</view>
+          </view>
+        </view>
+        <view class="bot-con">
+          <text class="red">消费满1000元使用</text>
+          <button class="youhq_right">去使用</button>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

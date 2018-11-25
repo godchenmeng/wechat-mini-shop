@@ -2,7 +2,7 @@ import regeneratorRuntime from 'libs/regenerator-runtime/runtime-module';
 import requestUtil from './utils/request'
 import exceptionUtil from './utils/exception'
 import Cache from './utils/cache'
-const host = 'https://demo.fashop.cn/'
+const host = 'https://hyx.gzbxwa.com/'
 // const host = 'http://127.0.0.1:9510/'
 const api = {
     user: {
@@ -120,10 +120,6 @@ const api = {
             url: `${host}server/goodscategory/list`,
             method: 'GET'
         },
-        info:{
-            url: `${host}server/goodscategory/info`,
-            method: 'GET'
-        }
     },
     goods: {
         list: {
@@ -324,6 +320,7 @@ const api = {
     host
 }
 const request = async function (api, options = {}) {
+
     const body = (typeof options.data !== 'undefined') ? options.data : {}
     const cache = new Cache()
     let headers = (typeof options.header !== 'undefined') ? options.header : {}
@@ -341,12 +338,14 @@ const request = async function (api, options = {}) {
         headers: headers
     })
     if (result.status === 200) {
+        debugger
         if (result.body.code === 0) {
             return result.body
         } else {
             throw new exceptionUtil(result.body.msg, result.body.code)
         }
     } else {
+      debugger
         // todo log
         console.log(`请求：${api.url} ${api.url.method}：\n`)
         console.log(result)

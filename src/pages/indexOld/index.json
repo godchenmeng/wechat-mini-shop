@@ -4,6 +4,7 @@
   "usingComponents": {
     "page-banner": "../../components/page/banner/index",
     "page-grid-nav-bar": "../../components/page/gridNavBar/index",
+    "page-goods": "../../components/page/goods/index",
     "page-goods-list": "../../components/page/goodsList/index",
     "page-divider": "../../components/page/divider/index",
     "page-goods-search": "../../components/page/goodsSearch/index",

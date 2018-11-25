@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "FaShop商城系统",
+  "navigationBarTitleText": "恒源祥商城",
   "usingComponents": {
     "fa-tab": "../../../ui/tab/index",
     "fa-tag": "../../../ui/tag/index",

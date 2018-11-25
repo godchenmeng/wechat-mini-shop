@@ -1,0 +1,57 @@
+<view style='background-color:#efeff4;display: block;overflow: hidden'>
+  <view class="page-goods-search" style="background-color: {{dataSource.options.background_color}}">
+      <section bindtap="onClick">
+          <image src="goods-search-icon.png" mode="aspectFit"/>
+          <text>搜索商品</text>
+      </section>
+  </view>
+  <view id="tabbar3" class="mui-control-content">
+    <view class="tabbar3_Box">
+      <map class="store-map"></map>
+      <view class="store-title">
+        <image src="/themes/default/store/store-icon.png"></image>
+        <view class='h3'>门店列表</view>
+      </view>
+      <view class="store-list">
+        <view class="con-left">
+          <view class="strong">金阳门店</view>
+          <view class="gray2">(距离120m)</view>
+          <view class="p1">
+            <image src="/themes/default/store/home-add.png"></image>
+            福州街120号
+          </view>
+        </view>
+        <view class="btn-right">
+          <button class=" btn-icon">进店</button>
+        </view>
+      </view>
+      <view class="store-list">
+        <view class="con-left">
+          <view class="strong">喷水池店</view>
+          <view class="gray2">(距离520m)</view>
+          <view class="p1">
+            <image src="/themes/default/store/home-add.png"></image>
+            福州街120号
+          </view>
+        </view>
+        <view class="btn-right">
+          <button class=" btn-icon">进店</button>
+        </view>
+      </view>
+      <view class="store-list">
+        <view class="con-left">
+          <view class="strong">白云门店</view>
+          <view class="gray2">(距离1km)</view>
+          <view class="p1">
+            <image src="/themes/default/store/home-add.png"></image>
+            福州街120号
+          </view>
+        </view>
+        <view class="btn-right">
+          <button class=" btn-icon">进店</button>
+        </view>
+      </view>
+
+    </view>
+  </view>
+</view>

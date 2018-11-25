@@ -1,40 +1,63 @@
-<view style="background-color:{{backgroundColor}};display: block;overflow: hidden">
-    <view wx:for="{{pageData}}" wx:key="key" wx:for-index="page-data" wx:for-item="item">
-        <block wx:if="{{item.type === 'image_ads'}}">
-            <page-banner dataSource="{{item}}" bind:click="onBannerClick"/>
-        </block>
-        <block wx:elif="{{item.type === 'image_nav'}}">
-            <page-grid-nav-bar dataSource="{{item}}" bind:click="onGridNavBarClick"/>
-        </block>
-        <block wx:elif="{{item.type === 'goods'}}">
-            <page-goods-list dataSource="{{item}}" bind:click="onGoodsClick"/>
-        </block>
-        <block wx:elif="{{item.type === 'goods_list'}}">
-            <page-goods-list dataSource="{{item}}" bind:click="onGoodsClick"/>
-        </block>
-        <block wx:elif="{{item.type === 'separator'}}">
-            <page-divider dataSource="{{item}}"/>
-        </block>
-        <block wx:elif="{{item.type === 'goods_search'}}">
-            <page-goods-search dataSource="{{item}}" bind:click="onSearchClick"/>
-        </block>
-        <block wx:elif="{{item.type === 'shop_window'}}">
-            <page-pic-window dataSource="{{item}}" bind:click="onShopWindowClick"/>
-        </block>
-        <block wx:elif="{{item.type === 'top_menu'}}">
-            <page-icon-nav-bar dataSource="{{item}}" bind:click="onIconNavClick"/>
-        </block>
-        <block wx:elif="{{item.type === 'auxiliary_blank'}}">
-            <page-placeholder-line dataSource="{{item}}"/>
-        </block>
-        <block wx:elif="{{item.type === 'title'}}">
-            <page-column-title dataSource="{{item}}"/>
-        </block>
-        <block wx:elif="{{item.type === 'text_nav'}}">
-            <page-text-nav dataSource="{{item}}" bind:click="onTextNavClick"/>
-        </block>
-        <block wx:elif="{{item.type === 'video'}}">
-            <page-video dataSource="{{item}}"/>
-        </block>
+<view style='background-color:#efeff4;display: block;overflow: hidden'>
+  <block>
+    <text class='main_top'>偏偏花语入梦来，畅享舒适睡眠！ </text>
+  </block>
+  <view class="banner">
+    <section class='head'>
+      <image src="/themes/default/index/user1.png"></image>
+    </section>
+    <section class="user-info">
+      <view>
+        <text class='h3'>您好，用户姓名！</text>
+      </view>
+      <view class="box-mar-top">
+        <view class="data-info">当前积分</view>
+        <view class="data-info">消费金额(元)</view>
+      </view>
+      <view class="box-mar-buttom">
+        <text class="data-info">5674</text>
+        <text class="data-info">12345.12</text>
+      </view>
+    </section>
+  </view>
+  <view class="youhq_box">
+    <view class="t-con">
+      <view class="youhq_left">
+        <text class="font35 white" style='line-height:80rpx'>8</text>
+        <text>折\n优惠券</text>
+      </view>
+      <view class="youhq_middle">
+        <view>您有一张优惠券即将到期！</view>
+        <view class='h3'>\n全店通用</view>
+        <view class='p'>\n有效期至:2018-11-12</view>
+      </view>
     </view>
+    <view class="bot-con">
+      <text class="red">还有5天到期</text>
+      <button class="youhq_right">去使用</button>
+    </view>
+  </view>
+  <button class="youhq-more">查看更多优惠券></button>
+  <view class="home-activity-box">
+    <view class="photo-block"><image src="/themes/default/index/photo-activity.png"></image></view>
+    <view class="text-block">
+      <view  class="title-info">
+        <view class='h3'>梦洁家纺少女心单纯色家纺被罩四件套全棉四件套</view>
+        <text class='p'>品质好货，不能错过的亲民价！</text>
+      </view>
+      <!-- <button class="btn">活动入口</button> -->
+    </view>
+  </view>
+  <view class="home-down-box">
+    <view class="left-text">
+      <view>贵阳店</view>
+      <view class="p1">(距离您200米)</view>
+      <view class="black">
+        <image src="/themes/default/index/home-add.png"></image>喷水池国贸一楼
+      </view>
+      <view class="red"><image src="/themes/default/index/home-phone.png"></image>0851-87654321</view>
+      <button class='btn'>附近的门店</button>
+    </view>
+    <map class="right-map"></map>
+  </view>
 </view>
